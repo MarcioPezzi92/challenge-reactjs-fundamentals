@@ -1,18 +1,16 @@
 import './App.css'
 import { Header } from './components/Header/Header'
-import { TodoForm } from './components/Todo-form/TodoForm'
+import { TodoList } from './components/Todo-list/TodoList'
 
 function App() {
-  return (
 
-    <div>
+  return (
+    <div className='min-h-screen bg-gray-800'>
       <Header />
-      <TodoForm />
+      <div className='-mt-8 mx-auto w-2/3'>
+        <TodoList />
+      </div>
     </div>
-    
-    // <div className='w-full h-screen text-4xl text-blue-700 flex items-center justify-center'>
-    //   hello world, tailwind css
-    // </div>
   )
 }
 
